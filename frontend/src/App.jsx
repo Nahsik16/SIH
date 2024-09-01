@@ -11,6 +11,10 @@ import AlumniMembers from "./utils/AluminiMembers.jsx";
 import Members from "./pages/Members/Members.jsx";
 import Events from "./pages/Events/Events.jsx";
 import JobPortal from "./utils/JobPortal.jsx";
+import Gallery from "./pages/Gallery/Gallery.jsx";
+import Donations from "./pages/Donations/Donations.jsx";
+
+
 
 const App = () => {
   return (
@@ -23,6 +27,8 @@ const App = () => {
           <Route path="/members" element={<Members />} />
           <Route path="/events" element={<Events />} />
           <Route path="/job" element={<JobPortal />} />
+        <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/donations" element={<Donations/>}/>
         </Routes>
       </div>
       <Footer />

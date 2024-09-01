@@ -1,0 +1,67 @@
+.donations-section {
+  padding: 2rem 0;
+}
+
+.donations-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.donation-options {
+  margin-bottom: 2rem;
+}
+
+.donation-options h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.donation-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.donation-options li {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.donation-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
