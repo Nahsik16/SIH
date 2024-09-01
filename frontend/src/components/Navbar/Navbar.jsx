@@ -45,9 +45,14 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         {userLoggedIn ? (
+
           <div>
-            <p>Welcome, {currentUser.displayName || currentUser.email}</p>
+            {/* <p>{currentUser.displayName || currentUser.email}</p> */}
+
+            <button className="navbar-button" onClick={() => navigate('/register')}>Register</button>
+
             <button className="navbar-button" onClick={handleLogout}>Logout</button>
+
           </div>
         ) : (
           <button className="navbar-button" onClick={handleGoogleLogin}>Login</button>
