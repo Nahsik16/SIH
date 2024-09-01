@@ -74,3 +74,23 @@ exports.login = async (req, res) => {
         return res.status(500).json({ errors: [{ message: "Server error" }] });
     }
 };
+
+exports.getRegisteredUsersByUsername = async (req, res) => {
+    try{
+        const username = req.params.username;
+        const users = await User.find({username : username}).exec();
+        return res.status(200).json({users}); 
+    } catch (error){
+        console.log("Error while Fetching Data", error);
+    }
+}
+
+exports.getAllRegisteredUsers = async (req, res) => {
+    try{
+        const users = await User.find();
+        return res.status(200).json(users);
+    }
+    catch(error){
+        console.log("Error while Fetching Data", error);
+    }
+}
