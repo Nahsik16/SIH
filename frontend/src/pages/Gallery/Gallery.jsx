@@ -1,7 +1,8 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Gallery= () => {
+
+const Gallery = () => {
   return (
     <div>
       <section className="py-3 container">
@@ -74,6 +75,7 @@ const Gallery= () => {
                 <img src="icons/twitter-icon.png" alt="Photo 7" />
                 <img src="icons/internet-icon.png" alt="Photo 8" />
                 <img src="icons/internet-icon.png" alt="Photo 9" />
+                {/* Add more photos here */}
               </div>
             </div>
           </div>
@@ -91,17 +93,18 @@ const Gallery= () => {
             <div className="modal-body">
               <div className="photo-grid">
                 <video controls className="w-100 mb-3">
-                  <source src="sample vids/sample1.mp4" type="video/mp4" />
+                  <source src="" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <video controls className="w-100 mb-3">
-                  <source src="sample vids/sample2.mp4" type="video/mp4" />
+                  <source src="" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <video controls className="w-100 mb-3">
-                  <source src="sample vids/sample3.mp4" type="video/mp4" />
+                  <source src="" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                {/* Add more videos here */}
               </div>
             </div>
           </div>

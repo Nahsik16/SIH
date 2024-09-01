@@ -39,7 +39,7 @@ const Navbar = () => {
         <button className="navbar-button" onClick={() => navigate('/members')}>Members</button>
         <button className="navbar-button" onClick={() => navigate('/events')}>Events</button>
         <button className="navbar-button" onClick={() => navigate('/gallery')}>Gallery</button>
-        <button className="navbar-button"onClick={() => navigate('/donations')}>Donations</button>
+        <button className="navbar-button" onClick={() => navigate('/donations')}>Donations</button>
         <button className="navbar-button">Contact</button>
       </div>
       <div className="navbar-right">
