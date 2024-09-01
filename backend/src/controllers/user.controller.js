@@ -13,15 +13,15 @@ exports.register = async (req, res) => {
     }
     try {
         const checkUser = await User.findOne({
-            $or: [{ email: req.body.email }, { username: req.body.username }],
+            $or: [{ email: req.body.email }],
         });
         if (checkUser) {
             return res.status(409).json({ errors: [{ message: "User already exists" }] });
         }
-        const salt = bcrypt.genSaltSync(10);
-        const hashedPassword = bcrypt.hashSync(req.body.password, salt);
-        // const hashedPassword = await bcrypt.hashSync(req.body.password, salt);
-        req.body.password = hashedPassword;
+        // const salt = bcrypt.genSaltSync(10);
+        // const hashedPassword = bcrypt.hashSync(req.body.password, salt);
+        // // const hashedPassword = await bcrypt.hashSync(req.body.password, salt);
+        // req.body.password = hashedPassword;
 
         const newUser = new User(req.body);
         await newUser.save();
