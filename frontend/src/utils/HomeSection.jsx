@@ -1,3 +1,4 @@
+import { assets } from "../assets/assets";
 
 
 function HomeSection() {
@@ -14,15 +15,15 @@ function HomeSection() {
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
-                  <div className="carousel-inner">
+                  <div className="carousel-inner" >
                     <div className="carousel-item active">
-                      <img src="image1.jpg" className="d-block w-100" alt="University Image 1" />
+                      <img src={assets.alumini1} className="d-block w-100" alt="University Image 1" style={{  width: '100%', height: '300px', objectFit: 'contain' }}/>
                     </div>
                     <div className="carousel-item">
-                      <img src="image2.jpg" className="d-block w-100" alt="University Image 2" />
+                      <img src={assets.alumini2} className="d-block w-100" alt="University Image 2" style={{ width: '100%', height: '300px', objectFit: 'contain' }}/>
                     </div>
                     <div className="carousel-item">
-                      <img src="image3.jpg" className="d-block w-100" alt="University Image 3" />
+                      <img src={assets.alumini3} className="d-block w-100" alt="University Image 3" style={{ width: '100%', height: '300px', objectFit: 'contain' }}/>
                     </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
