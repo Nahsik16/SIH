@@ -2,7 +2,7 @@
 import React from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-import { useAuth } from '../../context/Authcontext'
+import { useAuth } from '../../context/AuthContext'
 import { doSignInWithGoogle, doSignOut } from '../../firebase/auth'
 import { useNavigate } from 'react-router-dom'
 
@@ -25,7 +25,7 @@ const Navbar = () => {
       console.error('Logout failed:', error);
     }
   };
-  const navigate= useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className='navbar'>
