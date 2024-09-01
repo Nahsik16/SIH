@@ -20,25 +20,21 @@ const UserSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        default: "student"
+        enum: ['alumini', 'admin'],
+        required: true
     },
-    verification: {
-        type: Boolean,
-        default: false
-    },
-    adminVerification: {
-        type: Boolean,
-        default: false
-    },
-    profileExists: {
-        type: Boolean,
-        default: false
-    },
-    folderLink: {
+    branch: {
         type: String,
-        unique: true
-    }
-
+        enum: ['CS', 'IT', 'EXTC', 'AI&DS', "Chemical"],
+        required: true
+    },
+    year: {
+        type: Number,
+        required: true
+    },
+    currentcompany: {
+        type: String
+    },
 
 }, { timestamps: true });
 
