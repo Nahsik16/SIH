@@ -1,0 +1,28 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Alumni Homecoming Weekend 2024",
+            "date": "2024-10-18",
+            "time": "09:00 AM - 11:00 PM",
+            "venue": "University Campus",
+            "description": "Join us for a weekend of festivities, networking, and reconnecting with fellow alumni. The weekend will feature a welcome reception, campus tours, a football game, and a gala dinner."
+        },
+        {
+            "id": 2,
+            "title": "Virtual Networking Event: Careers in Tech",
+            "date": "2024-09-15",
+            "time": "05:00 PM - 07:00 PM",
+            "venue": "Online",
+            "description": "Connect with fellow alumni working in the tech industry. Share experiences, exchange ideas, and explore career opportunities. This event is open to all alumni, whether you are just starting out or are an experienced professional."
+        },
+        {
+            "id": 3,
+            "title": "Alumni Speaker Series: Leading in Times of Change",
+            "date": "2024-11-02",
+            "time": "02:00 PM - 04:00 PM",
+            "venue": "Alumni Hall",
+            "description": "Join us for an insightful discussion with distinguished alumni who are leaders in their respective fields. The panel will discuss strategies for leading organizations through periods of significant change and uncertainty."
+        }
+    ]
+}
