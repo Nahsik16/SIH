@@ -6,6 +6,10 @@ import college1 from './college1.jpg'
 import college2 from './college2.jpg'
 import college3 from './college3.jpg'
 
+import carouselOne from './carousel1.jpg';
+import carouselTwo from './carousel2.jpg';
+import carouselThree from './carousel3.jpg';
+
 
 import alumini1 from './alumini_1.png'
 import alumini2 from './alumini_2.png'  
@@ -166,5 +170,9 @@ export const assets ={
   
   college1,
   college2,
-  college3
+  college3,
+
+  carouselOne,
+  carouselTwo,
+  carouselThree,
 }
