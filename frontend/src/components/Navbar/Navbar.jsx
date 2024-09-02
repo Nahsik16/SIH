@@ -41,7 +41,7 @@ const Navbar = () => {
         <button className="navbar-button" onClick={() => navigate('/job')}>Job Posted</button>
         <button className="navbar-button" onClick={() => navigate('/gallery')}>Gallery</button>
         <button className="navbar-button" onClick={() => navigate('/donations')}>Donations</button>
-        <button className="navbar-button">Contact</button>
+        <button className="navbar-button"  >Contact</button>
       </div>
       <div className="navbar-right">
         {userLoggedIn ? (

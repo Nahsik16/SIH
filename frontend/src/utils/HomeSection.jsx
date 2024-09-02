@@ -1,7 +1,7 @@
-import { assets } from "../assets/assets";
+import { assets, eventsList } from "../assets/assets";
 
 function HomeSection() {
-  return (
+  return  (
     <>
       <section className="container py-5">
         <div className="row">
@@ -37,36 +37,19 @@ function HomeSection() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section className="container py-5">
-        <div className="row">
-          <div className="col-md-8 mb-4">
-            <div className="card card-spacing">
-              <a href="newsroom.html" className="text-decoration-none text-dark">
-                <div className="card-body">
-                  <h2 className="card-title">Newsroom</h2>
-                  <ul className="list-unstyled">
-                    <li><strong>Highlight 1:</strong> Brief news highlight.</li>
-                    <li><strong>Highlight 2:</strong> Brief news highlight.</li>
-                    <li><strong>Highlight 3:</strong> Brief news highlight.</li>
-                    <li><strong>Highlight 4:</strong> Brief news highlight.</li>
-                    <li><strong>Highlight 5:</strong> Brief news highlight.</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
+          {/* Events section moved inside the same row as the carousel */}
           <div className="col-md-4 mb-4">
             <div className="card card-spacing">
               <a href="events.html" className="text-decoration-none text-dark">
                 <div className="card-body">
                   <h5 className="card-title">Upcoming Events</h5>
                   <ul className="list-unstyled">
-                    <li><strong>Event 1:</strong> Date and brief details.</li>
-                    <li><strong>Event 2:</strong> Date and brief details.</li>
-                    <li><strong>Event 3:</strong> Date and brief details.</li>
+                    {eventsList.upcoming.slice(0, 3).map((event, index) => (
+                      <li key={index}>
+                        <strong>{event.title}:</strong> {event.startDate} - {event.endDate}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </a>
@@ -105,13 +88,13 @@ function HomeSection() {
                   <h2 className="card-title">New Members</h2>
                   <div className="row">
                     <div className="col-md-4">
-                      <img style={{height : "60%", width :"60%", objectFit :"contain", borderRadius : "50%"}} src={assets.alumini4} className="img-fluid" alt="New Member 1" />
+                      <img style={{height : "50vh", width :"50vh", objectFit :"contain", borderRadius : "50%"}} src={assets.alumini4} className="img-fluid" alt="New Member 1" />
                     </div>
                     <div className="col-md-4">
-                      <img src={assets.alumini5} style={{height : "60%", width :"60%", objectFit :"contain", borderRadius : "50%"}} className="img-fluid" alt="New Member 2" />
+                      <img src={assets.alumini5}style={{height : "50vh", width :"50vh", objectFit :"contain", borderRadius : "50%"}}className="img-fluid" alt="New Member 2" />
                     </div>
                     <div className="col-md-4">
-                      <img src={assets.alumini6} style={{height : "60%", width :"60%", objectFit :"contain", borderRadius : "50%"}} className="img-fluid" alt="New Member 3" />
+                      <img src={assets.alumini6} style={{height : "50vh", width :"50vh", objectFit :"contain", borderRadius : "50%"}} className="img-fluid" alt="New Member 3" />
                     </div>
                   </div>
                 </div>
@@ -130,13 +113,13 @@ function HomeSection() {
                   <h2 className="card-title">Alumni Profile</h2>
                   <div className="row">
                     <div className="col-md-4">
-                      <img src="profile1.jpg" className="img-fluid" alt="Profile 1" />
+                      <img src={assets.alumini5} className="img-fluid" alt="Profile 1" />
                     </div>
                     <div className="col-md-4">
-                      <img src="profile2.jpg" className="img-fluid" alt="Profile 2" />
+                      <img src={assets.alumini6} className="img-fluid" alt="Profile 2" />
                     </div>
                     <div className="col-md-4">
-                      <img src="profile3.jpg" className="img-fluid" alt="Profile 3" />
+                      <img src={assets.alumini3} className="img-fluid" alt="Profile 3" />
                     </div>
                   </div>
                   <div className="text-center mt-3">
