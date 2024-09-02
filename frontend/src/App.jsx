@@ -13,6 +13,8 @@ import Events from "./pages/Events/Events.jsx";
 import JobPortal from "./utils/JobPortal.jsx";
 import Gallery from "./pages/Gallery/Gallery.jsx";
 import Donations from "./pages/Donations/Donations.jsx";
+import Profile from "./components/Profile/Profile.jsx";
+import AlumniProfiles from "./utils/AluminiProfiles.jsx";
 
 
 
@@ -27,10 +29,10 @@ const App = () => {
           <Route path="/members" element={<Members />} />
           <Route path="/events" element={<Events />} />
           <Route path="/job" element={<JobPortal />} />
-        <Route path="/gallery" element={<Gallery/>}/>
-        <Route path="/donations" element={<Donations/>}/>
-            <Route path='/register' element={ <RegistrationForm />} />
-
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/donations" element={<Donations/>}/>
+          <Route path='/register' element={ <RegistrationForm />} />
+          <Route path='/profile' element={ <AlumniProfiles/>} />
         </Routes>
         </div>
         <Footer  />

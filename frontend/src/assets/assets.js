@@ -101,7 +101,7 @@ export const eventsList = {
       description: "Join us for the biggest alumni gathering of the year. Reconnect with your batchmates and make new connections!",
       startDate: "April 5, 2024",
       endDate: "April 7, 2024",
-      image: "icons/instagram-icon.jpg",
+      image: "https://cdn.prod.website-files.com/602a043d17d7780d1cce562e/64def96cf1cd1018c9e2aeed_alumni.jpg" ,
       viewLink: "#",
       registerLink: "#"
     },
@@ -110,7 +110,7 @@ export const eventsList = {
       description: "Get insights from experts in the field and enhance your career prospects.",
       startDate: "March 12, 2024",
       endDate: "March 13, 2024",
-      image: "icons/internet-icon.png",
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7QXXG-jrZjaDDmLs5FUxUM8IwOymolG6Bg&s',
       viewLink: "#",
       registerLink: "#"
     },
@@ -119,7 +119,7 @@ export const eventsList = {
       description: "Get ready for some fun and games with fellow alumni at the annual sports day event.",
       startDate: "February 22, 2024",
       endDate: "February 23, 2024",
-      image: "icons/twitter-icon.png",
+      image: "https://cdn.prod.website-files.com/602a043d17d7780d1cce562e/64def96cf1cd1018c9e2aeed_alumni.jpg" ,
       viewLink: "#",
       registerLink: "#"
     }
@@ -130,7 +130,7 @@ export const eventsList = {
       description: "Alumni gathered to share their professional experiences and establish valuable networks.",
       startDate: "January 10, 2024",
       endDate: "January 11, 2024",
-      image: "icons/fb-icon.webp",
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7QXXG-jrZjaDDmLs5FUxUM8IwOymolG6Bg&s',
       detailsLink: "#"
     },
     {
@@ -138,7 +138,7 @@ export const eventsList = {
       description: "An insightful webinar where industry leaders shared their journey and tips for success.",
       startDate: "December 5, 2023",
       endDate: "December 5, 2023",
-      image: "icons/instagram-icon.jpg",
+      image: "https://cdn.prod.website-files.com/602a043d17d7780d1cce562e/64def96cf1cd1018c9e2aeed_alumni.jpg" ,
       detailsLink: "#"
     },
     {
@@ -146,7 +146,7 @@ export const eventsList = {
       description: "Alumni competed in teams to build innovative solutions during this hackathon.",
       startDate: "November 15, 2023",
       endDate: "November 17, 2023",
-      image: "icons/instagram-icon.jpg",
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7QXXG-jrZjaDDmLs5FUxUM8IwOymolG6Bg&s',
       detailsLink: "#"
     }
   ]
