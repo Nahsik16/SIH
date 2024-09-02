@@ -1,6 +1,5 @@
 import { assets } from "../assets/assets";
 
-
 function HomeSection() {
   return (
     <>
@@ -15,15 +14,15 @@ function HomeSection() {
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
-                  <div className="carousel-inner" >
+                  <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <img src={assets.alumini1} className="d-block w-100" alt="University Image 1" style={{  width: '100%', height: '300px', objectFit: 'contain' }}/>
+                      <img src={assets.alumini1} className="d-block w-100" alt="University Image 1" style={{ width: '100%', height: '300px', objectFit: 'contain' }} />
                     </div>
                     <div className="carousel-item">
-                      <img src={assets.alumini2} className="d-block w-100" alt="University Image 2" style={{ width: '100%', height: '300px', objectFit: 'contain' }}/>
+                      <img src={assets.alumini2} className="d-block w-100" alt="University Image 2" style={{ width: '100%', height: '300px', objectFit: 'contain' }} />
                     </div>
                     <div className="carousel-item">
-                      <img src={assets.alumini3} className="d-block w-100" alt="University Image 3" style={{ width: '100%', height: '300px', objectFit: 'contain' }}/>
+                      <img src={assets.alumini3} className="d-block w-100" alt="University Image 3" style={{ width: '100%', height: '300px', objectFit: 'contain' }} />
                     </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -36,14 +35,6 @@ function HomeSection() {
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mb-4">
-            <div className="card signup-card">
-              <a href="signup.html">
-                <img src="signup-image.jpg" className="card-img-top" alt="Signup Image" />
-              </a>
             </div>
           </div>
         </div>
@@ -93,13 +84,13 @@ function HomeSection() {
                   <h2 className="card-title">Notable Alumni</h2>
                   <div className="row">
                     <div className="col-md-4">
-                      <img src="alumni1.jpg" className="img-fluid" alt="Alumni 1" />
+                      <img src={assets.alumini1} className="img-fluid" alt="Alumni 1" />
                     </div>
                     <div className="col-md-4">
-                      <img src="alumni2.jpg" className="img-fluid" alt="Alumni 2" />
+                      <img src={assets.alumini2} className="img-fluid" alt="Alumni 2" />
                     </div>
                     <div className="col-md-4">
-                      <img src="alumni3.jpg" className="img-fluid" alt="Alumni 3" />
+                      <img src={assets.alumini3} className="img-fluid" alt="Alumni 3" />
                     </div>
                   </div>
                 </div>
@@ -114,14 +105,42 @@ function HomeSection() {
                   <h2 className="card-title">New Members</h2>
                   <div className="row">
                     <div className="col-md-4">
-                      <img src="member1.jpg" className="img-fluid" alt="New Member 1" />
+                      <img style={{height : "60%", width :"60%", objectFit :"contain", borderRadius : "50%"}} src={assets.alumini4} className="img-fluid" alt="New Member 1" />
                     </div>
                     <div className="col-md-4">
-                      <img src="member2.jpg" className="img-fluid" alt="New Member 2" />
+                      <img src={assets.alumini5} style={{height : "60%", width :"60%", objectFit :"contain", borderRadius : "50%"}} className="img-fluid" alt="New Member 2" />
                     </div>
                     <div className="col-md-4">
-                      <img src="member3.jpg" className="img-fluid" alt="New Member 3" />
+                      <img src={assets.alumini6} style={{height : "60%", width :"60%", objectFit :"contain", borderRadius : "50%"}} className="img-fluid" alt="New Member 3" />
                     </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container py-5">
+        <div className="row">
+          <div className="col-md-12 mb-4">
+            <div className="card card-spacing">
+              <a href="alumni-profile.html" className="text-decoration-none text-dark">
+                <div className="card-body">
+                  <h2 className="card-title">Alumni Profile</h2>
+                  <div className="row">
+                    <div className="col-md-4">
+                      <img src="profile1.jpg" className="img-fluid" alt="Profile 1" />
+                    </div>
+                    <div className="col-md-4">
+                      <img src="profile2.jpg" className="img-fluid" alt="Profile 2" />
+                    </div>
+                    <div className="col-md-4">
+                      <img src="profile3.jpg" className="img-fluid" alt="Profile 3" />
+                    </div>
+                  </div>
+                  <div className="text-center mt-3">
+                    <a href="https://alumni-profile-webapp.com" className="btn btn-primary">View Full Profile</a>
                   </div>
                 </div>
               </a>
