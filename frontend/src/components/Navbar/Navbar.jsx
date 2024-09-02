@@ -2,7 +2,7 @@
 import React from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-import { useAuth } from '../../context/Authcontext'
+import { useAuth } from '../../context/AuthContext'
 import { doSignInWithGoogle, doSignOut } from '../../firebase/auth'
 import { useNavigate } from 'react-router-dom'
 
@@ -25,7 +25,7 @@ const Navbar = () => {
       console.error('Logout failed:', error);
     }
   };
-  const navigate= useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className='navbar'>
@@ -36,15 +36,23 @@ const Navbar = () => {
       <div className="navbar-center">
         <button className="navbar-button" onClick={() => navigate('/')}>Home</button>
         <button className="navbar-button" onClick={() => navigate('/about')}>About Us</button>
-        <button className="navbar-button">Events</button>
-        <button className="navbar-button">Gallery</button>
+        <button className="navbar-button" onClick={() => navigate('/members')}>Members</button>
+        <button className="navbar-button" onClick={() => navigate('/events')}>Events</button>
+        <button className="navbar-button" onClick={() => navigate('/job')}>Job Posted</button>
+        <button className="navbar-button" onClick={() => navigate('/gallery')}>Gallery</button>
+        <button className="navbar-button" onClick={() => navigate('/donations')}>Donations</button>
         <button className="navbar-button">Contact</button>
       </div>
       <div className="navbar-right">
         {userLoggedIn ? (
+
           <div>
-            <p>Welcome, {currentUser.displayName || currentUser.email}</p>
+            {/* <p>{currentUser.displayName || currentUser.email}</p> */}
+
+            <button className="navbar-button" onClick={() => navigate('/register')}>Register</button>
+
             <button className="navbar-button" onClick={handleLogout}>Logout</button>
+
           </div>
         ) : (
           <button className="navbar-button" onClick={handleGoogleLogin}>Login</button>
