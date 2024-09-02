@@ -15,7 +15,7 @@ const AlumniProfiles = () => {
     };
 
     return (
-        <div>
+        <div >
             <Profile
                 profilePic={alumniData.profilePic}
                 name={alumniData.name}
