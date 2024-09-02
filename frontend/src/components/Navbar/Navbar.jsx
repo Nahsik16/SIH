@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="navbar-left">
         <img src={assets.logo} alt="Alumni Logo" className="logo" />
-        <p className='name'>Alumini</p>
+        <p className='name'>Alumni</p>
       </div>
       <div className="navbar-center">
         <button className="navbar-button" onClick={() => navigate('/')}>Home</button>

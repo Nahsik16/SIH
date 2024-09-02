@@ -1,14 +1,9 @@
-
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { eventsList } from '../../assets/assets';
 
 const Events = () => {
   return (
     <div>
-      
-
       <section className="py-5">
         <div className="container">
           <h2 className="text-center mb-5">Upcoming Events</h2>
@@ -16,7 +11,12 @@ const Events = () => {
             {eventsList.upcoming.map((event, index) => (
               <div className="col-md-6 col-lg-4" key={index}>
                 <div className="card h-100">
-                  <img src={event.image} className="card-img-top" alt="Event Poster" />
+                  <img
+                    src={event.image}
+                    style={{ height: '200px', objectFit: 'cover' }}  // Inline styles
+                    className="card-img-top"
+                    alt="Event Poster"
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{event.title}</h5>
                     <p className="card-text">{event.description}</p>
@@ -35,7 +35,12 @@ const Events = () => {
             {eventsList.recent.map((event, index) => (
               <div className="col-md-6 col-lg-4" key={index}>
                 <div className="card h-100">
-                  <img src={event.image} className="card-img-top" alt="Event Poster" />
+                  <img
+                    src={event.image}
+                    style={{ height: '200px', objectFit: 'cover' }}  // Inline styles
+                    className="card-img-top"
+                    alt="Event Poster"
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{event.title}</h5>
                     <p className="card-text">{event.description}</p>
@@ -49,8 +54,6 @@ const Events = () => {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 };
